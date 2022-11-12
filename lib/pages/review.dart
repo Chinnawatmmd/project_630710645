@@ -1,4 +1,3 @@
-import 'dart:html';
 
 import 'package:flutter/material.dart';
 
@@ -15,7 +14,14 @@ class ReviewPage extends StatefulWidget {
 class _ReviewPageState extends State<ReviewPage> {
   var isShowWrong = true;
   var isShowCorrect = false;
-
+  @override
+  void initState() {
+    super.initState();
+    if(widget.cardWrong.length==0){
+      isShowWrong = false;
+      isShowCorrect = true;
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(

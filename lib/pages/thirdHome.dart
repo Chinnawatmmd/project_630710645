@@ -85,7 +85,7 @@ class _ThirdHomePageState extends State<ThirdHomePage> {
                       );
                     },
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(16.0),
                       child: Text(
                         'PRACTICE',
                         style: TextStyle(
